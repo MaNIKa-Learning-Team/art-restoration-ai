@@ -3,7 +3,7 @@ AI model that visually restores deteriorated paintings to guide and support art 
 
 ## Setup
 
-### 1. Install the environment
+### Install the environment
 From the project root, run:
 `bash setup.sh`
 
