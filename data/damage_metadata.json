@@ -1,0 +1,32 @@
+[
+  {
+    "image_identifier": "2272e22dcc68d4482b697b4483f9b82f79da494b",
+    "damage_type": "WaterDiscolouration",
+    "original_image_path": "../data/img/full/2272e22dcc68d4482b697b4483f9b82f79da494b.jpg",
+    "damaged_image_path": "../data/generated-damaged-images/2272e22dcc68d4482b697b4483f9b82f79da494b-WaterDiscolouration.png"
+  },
+  {
+    "image_identifier": "4ab128c6628cc70c24da63f736a14194a058b923",
+    "damage_type": "WaterDiscolouration",
+    "original_image_path": "../data/img/full/4ab128c6628cc70c24da63f736a14194a058b923.jpg",
+    "damaged_image_path": "../data/generated-damaged-images/4ab128c6628cc70c24da63f736a14194a058b923-WaterDiscolouration.png"
+  },
+  {
+    "image_identifier": "d73cb8d6a2be216deb26aa3107defdb9e01620f7",
+    "damage_type": "WaterDiscolouration",
+    "original_image_path": "../data/img/full/d73cb8d6a2be216deb26aa3107defdb9e01620f7.jpg",
+    "damaged_image_path": "../data/generated-damaged-images/d73cb8d6a2be216deb26aa3107defdb9e01620f7-WaterDiscolouration.png"
+  },
+  {
+    "image_identifier": "ca7b1c5efc57c3c978be8365c54ab4e54b8e4723",
+    "damage_type": "ScratchDamage",
+    "original_image_path": "../data/img/full/ca7b1c5efc57c3c978be8365c54ab4e54b8e4723.jpg",
+    "damaged_image_path": "../data/generated-damaged-images/ca7b1c5efc57c3c978be8365c54ab4e54b8e4723-ScratchDamage.png"
+  },
+  {
+    "image_identifier": "43ecd8a9fe1d83d96ad40ab59ac44127cffd38f5",
+    "damage_type": "ScratchDamage",
+    "original_image_path": "../data/img/full/43ecd8a9fe1d83d96ad40ab59ac44127cffd38f5.jpg",
+    "damaged_image_path": "../data/generated-damaged-images/43ecd8a9fe1d83d96ad40ab59ac44127cffd38f5-ScratchDamage.png"
+  }
+]
