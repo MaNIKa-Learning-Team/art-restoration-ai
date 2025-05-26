@@ -1,32 +1,402 @@
 [
   {
-    "image_identifier": "2272e22dcc68d4482b697b4483f9b82f79da494b",
+    "image_identifier": "8bb66340fb732c61687220e734b6c2b015d7764e",
+    "original_image_filename": "8bb66340fb732c61687220e734b6c2b015d7764e.jpg",
     "damage_type": "WaterDiscolouration",
-    "original_image_path": "../data/img/full/2272e22dcc68d4482b697b4483f9b82f79da494b.jpg",
-    "damaged_image_path": "../data/generated-damaged-images/2272e22dcc68d4482b697b4483f9b82f79da494b-WaterDiscolouration.png"
+    "original_image_path": "../data/img/full/8bb66340fb732c61687220e734b6c2b015d7764e.jpg",
+    "damaged_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damaged-images/8bb66340fb732c61687220e734b6c2b015d7764e-WaterDiscolouration.png",
+    "mask_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damage-masks/8bb66340fb732c61687220e734b6c2b015d7764e-WaterDiscolouration-mask.png"
   },
   {
-    "image_identifier": "4ab128c6628cc70c24da63f736a14194a058b923",
+    "image_identifier": "55fad66f48accbeb2565cbef7e0046f7b51d659b",
+    "original_image_filename": "55fad66f48accbeb2565cbef7e0046f7b51d659b.jpg",
     "damage_type": "WaterDiscolouration",
-    "original_image_path": "../data/img/full/4ab128c6628cc70c24da63f736a14194a058b923.jpg",
-    "damaged_image_path": "../data/generated-damaged-images/4ab128c6628cc70c24da63f736a14194a058b923-WaterDiscolouration.png"
+    "original_image_path": "../data/img/full/55fad66f48accbeb2565cbef7e0046f7b51d659b.jpg",
+    "damaged_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damaged-images/55fad66f48accbeb2565cbef7e0046f7b51d659b-WaterDiscolouration.png",
+    "mask_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damage-masks/55fad66f48accbeb2565cbef7e0046f7b51d659b-WaterDiscolouration-mask.png"
+  },
+  {
+    "image_identifier": "b2a9c03049c5e432a212570c2ca3fcf14392257a",
+    "original_image_filename": "b2a9c03049c5e432a212570c2ca3fcf14392257a.jpg",
+    "damage_type": "WaterDiscolouration",
+    "original_image_path": "../data/img/full/b2a9c03049c5e432a212570c2ca3fcf14392257a.jpg",
+    "damaged_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damaged-images/b2a9c03049c5e432a212570c2ca3fcf14392257a-WaterDiscolouration.png",
+    "mask_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damage-masks/b2a9c03049c5e432a212570c2ca3fcf14392257a-WaterDiscolouration-mask.png"
+  },
+  {
+    "image_identifier": "a67b5f3c592777a567ffcb70809fc420763b7a4c",
+    "original_image_filename": "a67b5f3c592777a567ffcb70809fc420763b7a4c.jpg",
+    "damage_type": "WaterDiscolouration",
+    "original_image_path": "../data/img/full/a67b5f3c592777a567ffcb70809fc420763b7a4c.jpg",
+    "damaged_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damaged-images/a67b5f3c592777a567ffcb70809fc420763b7a4c-WaterDiscolouration.png",
+    "mask_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damage-masks/a67b5f3c592777a567ffcb70809fc420763b7a4c-WaterDiscolouration-mask.png"
+  },
+  {
+    "image_identifier": "0bc350d9002f3095b84e49c04fcb8bf35e2897de",
+    "original_image_filename": "0bc350d9002f3095b84e49c04fcb8bf35e2897de.jpg",
+    "damage_type": "WaterDiscolouration",
+    "original_image_path": "../data/img/full/0bc350d9002f3095b84e49c04fcb8bf35e2897de.jpg",
+    "damaged_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damaged-images/0bc350d9002f3095b84e49c04fcb8bf35e2897de-WaterDiscolouration.png",
+    "mask_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damage-masks/0bc350d9002f3095b84e49c04fcb8bf35e2897de-WaterDiscolouration-mask.png"
+  },
+  {
+    "image_identifier": "8062dde6b85e066f4bf09c4be908e8130ef2a374",
+    "original_image_filename": "8062dde6b85e066f4bf09c4be908e8130ef2a374.jpg",
+    "damage_type": "WaterDiscolouration",
+    "original_image_path": "../data/img/full/8062dde6b85e066f4bf09c4be908e8130ef2a374.jpg",
+    "damaged_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damaged-images/8062dde6b85e066f4bf09c4be908e8130ef2a374-WaterDiscolouration.png",
+    "mask_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damage-masks/8062dde6b85e066f4bf09c4be908e8130ef2a374-WaterDiscolouration-mask.png"
   },
   {
     "image_identifier": "d73cb8d6a2be216deb26aa3107defdb9e01620f7",
+    "original_image_filename": "d73cb8d6a2be216deb26aa3107defdb9e01620f7.jpg",
     "damage_type": "WaterDiscolouration",
     "original_image_path": "../data/img/full/d73cb8d6a2be216deb26aa3107defdb9e01620f7.jpg",
-    "damaged_image_path": "../data/generated-damaged-images/d73cb8d6a2be216deb26aa3107defdb9e01620f7-WaterDiscolouration.png"
+    "damaged_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damaged-images/d73cb8d6a2be216deb26aa3107defdb9e01620f7-WaterDiscolouration.png",
+    "mask_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damage-masks/d73cb8d6a2be216deb26aa3107defdb9e01620f7-WaterDiscolouration-mask.png"
   },
   {
-    "image_identifier": "ca7b1c5efc57c3c978be8365c54ab4e54b8e4723",
+    "image_identifier": "c2cfff6874934d112bf8966792abf7f118dbf9ac",
+    "original_image_filename": "c2cfff6874934d112bf8966792abf7f118dbf9ac.jpg",
+    "damage_type": "WaterDiscolouration",
+    "original_image_path": "../data/img/full/c2cfff6874934d112bf8966792abf7f118dbf9ac.jpg",
+    "damaged_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damaged-images/c2cfff6874934d112bf8966792abf7f118dbf9ac-WaterDiscolouration.png",
+    "mask_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damage-masks/c2cfff6874934d112bf8966792abf7f118dbf9ac-WaterDiscolouration-mask.png"
+  },
+  {
+    "image_identifier": "d6f440bc183202cf7b47c05c7d6ade0490f50070",
+    "original_image_filename": "d6f440bc183202cf7b47c05c7d6ade0490f50070.jpg",
+    "damage_type": "WaterDiscolouration",
+    "original_image_path": "../data/img/full/d6f440bc183202cf7b47c05c7d6ade0490f50070.jpg",
+    "damaged_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damaged-images/d6f440bc183202cf7b47c05c7d6ade0490f50070-WaterDiscolouration.png",
+    "mask_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damage-masks/d6f440bc183202cf7b47c05c7d6ade0490f50070-WaterDiscolouration-mask.png"
+  },
+  {
+    "image_identifier": "3b6567cf13d9a04130a843719f7635f9ac623b03",
+    "original_image_filename": "3b6567cf13d9a04130a843719f7635f9ac623b03.jpg",
+    "damage_type": "WaterDiscolouration",
+    "original_image_path": "../data/img/full/3b6567cf13d9a04130a843719f7635f9ac623b03.jpg",
+    "damaged_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damaged-images/3b6567cf13d9a04130a843719f7635f9ac623b03-WaterDiscolouration.png",
+    "mask_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damage-masks/3b6567cf13d9a04130a843719f7635f9ac623b03-WaterDiscolouration-mask.png"
+  },
+  {
+    "image_identifier": "908c1aac3f7a7df92573e8a287d8d053bd101d32",
+    "original_image_filename": "908c1aac3f7a7df92573e8a287d8d053bd101d32.jpg",
+    "damage_type": "WaterDiscolouration",
+    "original_image_path": "../data/img/full/908c1aac3f7a7df92573e8a287d8d053bd101d32.jpg",
+    "damaged_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damaged-images/908c1aac3f7a7df92573e8a287d8d053bd101d32-WaterDiscolouration.png",
+    "mask_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damage-masks/908c1aac3f7a7df92573e8a287d8d053bd101d32-WaterDiscolouration-mask.png"
+  },
+  {
+    "image_identifier": "988cf37a143a906c74f76f67daf9aeaaa55e93e3",
+    "original_image_filename": "988cf37a143a906c74f76f67daf9aeaaa55e93e3.jpg",
+    "damage_type": "WaterDiscolouration",
+    "original_image_path": "../data/img/full/988cf37a143a906c74f76f67daf9aeaaa55e93e3.jpg",
+    "damaged_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damaged-images/988cf37a143a906c74f76f67daf9aeaaa55e93e3-WaterDiscolouration.png",
+    "mask_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damage-masks/988cf37a143a906c74f76f67daf9aeaaa55e93e3-WaterDiscolouration-mask.png"
+  },
+  {
+    "image_identifier": "7d76bb1a45f542434a642ecfb2044a55940c960b",
+    "original_image_filename": "7d76bb1a45f542434a642ecfb2044a55940c960b.jpg",
     "damage_type": "ScratchDamage",
-    "original_image_path": "../data/img/full/ca7b1c5efc57c3c978be8365c54ab4e54b8e4723.jpg",
-    "damaged_image_path": "../data/generated-damaged-images/ca7b1c5efc57c3c978be8365c54ab4e54b8e4723-ScratchDamage.png"
+    "original_image_path": "../data/img/full/7d76bb1a45f542434a642ecfb2044a55940c960b.jpg",
+    "damaged_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damaged-images/7d76bb1a45f542434a642ecfb2044a55940c960b-ScratchDamage.png",
+    "mask_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damage-masks/7d76bb1a45f542434a642ecfb2044a55940c960b-ScratchDamage-mask.png"
+  },
+  {
+    "image_identifier": "4ab128c6628cc70c24da63f736a14194a058b923",
+    "original_image_filename": "4ab128c6628cc70c24da63f736a14194a058b923.jpg",
+    "damage_type": "WaterDiscolouration",
+    "original_image_path": "../data/img/full/4ab128c6628cc70c24da63f736a14194a058b923.jpg",
+    "damaged_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damaged-images/4ab128c6628cc70c24da63f736a14194a058b923-WaterDiscolouration.png",
+    "mask_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damage-masks/4ab128c6628cc70c24da63f736a14194a058b923-WaterDiscolouration-mask.png"
+  },
+  {
+    "image_identifier": "589fad0d08cc5d6b937efa99d04977adcdc18e00",
+    "original_image_filename": "589fad0d08cc5d6b937efa99d04977adcdc18e00.jpg",
+    "damage_type": "ScratchDamage",
+    "original_image_path": "../data/img/full/589fad0d08cc5d6b937efa99d04977adcdc18e00.jpg",
+    "damaged_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damaged-images/589fad0d08cc5d6b937efa99d04977adcdc18e00-ScratchDamage.png",
+    "mask_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damage-masks/589fad0d08cc5d6b937efa99d04977adcdc18e00-ScratchDamage-mask.png"
+  },
+  {
+    "image_identifier": "2082ca632c22536d6a4069083ac3e6cdbcc7fad7",
+    "original_image_filename": "2082ca632c22536d6a4069083ac3e6cdbcc7fad7.jpg",
+    "damage_type": "ScratchDamage",
+    "original_image_path": "../data/img/full/2082ca632c22536d6a4069083ac3e6cdbcc7fad7.jpg",
+    "damaged_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damaged-images/2082ca632c22536d6a4069083ac3e6cdbcc7fad7-ScratchDamage.png",
+    "mask_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damage-masks/2082ca632c22536d6a4069083ac3e6cdbcc7fad7-ScratchDamage-mask.png"
   },
   {
     "image_identifier": "43ecd8a9fe1d83d96ad40ab59ac44127cffd38f5",
-    "damage_type": "ScratchDamage",
+    "original_image_filename": "43ecd8a9fe1d83d96ad40ab59ac44127cffd38f5.jpg",
+    "damage_type": "WaterDiscolouration",
     "original_image_path": "../data/img/full/43ecd8a9fe1d83d96ad40ab59ac44127cffd38f5.jpg",
-    "damaged_image_path": "../data/generated-damaged-images/43ecd8a9fe1d83d96ad40ab59ac44127cffd38f5-ScratchDamage.png"
+    "damaged_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damaged-images/43ecd8a9fe1d83d96ad40ab59ac44127cffd38f5-WaterDiscolouration.png",
+    "mask_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damage-masks/43ecd8a9fe1d83d96ad40ab59ac44127cffd38f5-WaterDiscolouration-mask.png"
+  },
+  {
+    "image_identifier": "a773404eb2fe74bd0e7af6fe2117aec23c621608",
+    "original_image_filename": "a773404eb2fe74bd0e7af6fe2117aec23c621608.jpg",
+    "damage_type": "ScratchDamage",
+    "original_image_path": "../data/img/full/a773404eb2fe74bd0e7af6fe2117aec23c621608.jpg",
+    "damaged_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damaged-images/a773404eb2fe74bd0e7af6fe2117aec23c621608-ScratchDamage.png",
+    "mask_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damage-masks/a773404eb2fe74bd0e7af6fe2117aec23c621608-ScratchDamage-mask.png"
+  },
+  {
+    "image_identifier": "8068aa5a83db5946bff029bf6440880777141cde",
+    "original_image_filename": "8068aa5a83db5946bff029bf6440880777141cde.jpg",
+    "damage_type": "WaterDiscolouration",
+    "original_image_path": "../data/img/full/8068aa5a83db5946bff029bf6440880777141cde.jpg",
+    "damaged_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damaged-images/8068aa5a83db5946bff029bf6440880777141cde-WaterDiscolouration.png",
+    "mask_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damage-masks/8068aa5a83db5946bff029bf6440880777141cde-WaterDiscolouration-mask.png"
+  },
+  {
+    "image_identifier": "33d262f880f5a5f428b7e67fb1ad4dd6bfd63cc7",
+    "original_image_filename": "33d262f880f5a5f428b7e67fb1ad4dd6bfd63cc7.jpg",
+    "damage_type": "WaterDiscolouration",
+    "original_image_path": "../data/img/full/33d262f880f5a5f428b7e67fb1ad4dd6bfd63cc7.jpg",
+    "damaged_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damaged-images/33d262f880f5a5f428b7e67fb1ad4dd6bfd63cc7-WaterDiscolouration.png",
+    "mask_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damage-masks/33d262f880f5a5f428b7e67fb1ad4dd6bfd63cc7-WaterDiscolouration-mask.png"
+  },
+  {
+    "image_identifier": "c34c3b96bd8823f0498d29ec69ad3eb18f387f1e",
+    "original_image_filename": "c34c3b96bd8823f0498d29ec69ad3eb18f387f1e.jpg",
+    "damage_type": "WaterDiscolouration",
+    "original_image_path": "../data/img/full/c34c3b96bd8823f0498d29ec69ad3eb18f387f1e.jpg",
+    "damaged_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damaged-images/c34c3b96bd8823f0498d29ec69ad3eb18f387f1e-WaterDiscolouration.png",
+    "mask_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damage-masks/c34c3b96bd8823f0498d29ec69ad3eb18f387f1e-WaterDiscolouration-mask.png"
+  },
+  {
+    "image_identifier": "2272e22dcc68d4482b697b4483f9b82f79da494b",
+    "original_image_filename": "2272e22dcc68d4482b697b4483f9b82f79da494b.jpg",
+    "damage_type": "WaterDiscolouration",
+    "original_image_path": "../data/img/full/2272e22dcc68d4482b697b4483f9b82f79da494b.jpg",
+    "damaged_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damaged-images/2272e22dcc68d4482b697b4483f9b82f79da494b-WaterDiscolouration.png",
+    "mask_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damage-masks/2272e22dcc68d4482b697b4483f9b82f79da494b-WaterDiscolouration-mask.png"
+  },
+  {
+    "image_identifier": "d754d53405ce07dc7ba8ec840da0546ac596114b",
+    "original_image_filename": "d754d53405ce07dc7ba8ec840da0546ac596114b.jpg",
+    "damage_type": "WaterDiscolouration",
+    "original_image_path": "../data/img/full/d754d53405ce07dc7ba8ec840da0546ac596114b.jpg",
+    "damaged_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damaged-images/d754d53405ce07dc7ba8ec840da0546ac596114b-WaterDiscolouration.png",
+    "mask_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damage-masks/d754d53405ce07dc7ba8ec840da0546ac596114b-WaterDiscolouration-mask.png"
+  },
+  {
+    "image_identifier": "8acedaf7294849f40d0e0ae55c5b232b77ea054c",
+    "original_image_filename": "8acedaf7294849f40d0e0ae55c5b232b77ea054c.jpg",
+    "damage_type": "ScratchDamage",
+    "original_image_path": "../data/img/full/8acedaf7294849f40d0e0ae55c5b232b77ea054c.jpg",
+    "damaged_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damaged-images/8acedaf7294849f40d0e0ae55c5b232b77ea054c-ScratchDamage.png",
+    "mask_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damage-masks/8acedaf7294849f40d0e0ae55c5b232b77ea054c-ScratchDamage-mask.png"
+  },
+  {
+    "image_identifier": "961a787f1a591255e39dbcc92701f347a79bdeb2",
+    "original_image_filename": "961a787f1a591255e39dbcc92701f347a79bdeb2.jpg",
+    "damage_type": "WaterDiscolouration",
+    "original_image_path": "../data/img/full/961a787f1a591255e39dbcc92701f347a79bdeb2.jpg",
+    "damaged_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damaged-images/961a787f1a591255e39dbcc92701f347a79bdeb2-WaterDiscolouration.png",
+    "mask_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damage-masks/961a787f1a591255e39dbcc92701f347a79bdeb2-WaterDiscolouration-mask.png"
+  },
+  {
+    "image_identifier": "9d039db3313a9e0e176902309d54e8fd35783a31",
+    "original_image_filename": "9d039db3313a9e0e176902309d54e8fd35783a31.jpg",
+    "damage_type": "WaterDiscolouration",
+    "original_image_path": "../data/img/full/9d039db3313a9e0e176902309d54e8fd35783a31.jpg",
+    "damaged_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damaged-images/9d039db3313a9e0e176902309d54e8fd35783a31-WaterDiscolouration.png",
+    "mask_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damage-masks/9d039db3313a9e0e176902309d54e8fd35783a31-WaterDiscolouration-mask.png"
+  },
+  {
+    "image_identifier": "6e51741e0fe7a10eefe07943101ddf7b548190e3",
+    "original_image_filename": "6e51741e0fe7a10eefe07943101ddf7b548190e3.jpg",
+    "damage_type": "CraquelureDamage",
+    "original_image_path": "../data/img/full/6e51741e0fe7a10eefe07943101ddf7b548190e3.jpg",
+    "damaged_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damaged-images/6e51741e0fe7a10eefe07943101ddf7b548190e3-CraquelureDamage.png",
+    "mask_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damage-masks/6e51741e0fe7a10eefe07943101ddf7b548190e3-CraquelureDamage-mask.png"
+  },
+  {
+    "image_identifier": "842cdf641eb30d9c9cbe15bc23e02256e5a5dfd4",
+    "original_image_filename": "842cdf641eb30d9c9cbe15bc23e02256e5a5dfd4.jpg",
+    "damage_type": "WaterDiscolouration",
+    "original_image_path": "../data/img/full/842cdf641eb30d9c9cbe15bc23e02256e5a5dfd4.jpg",
+    "damaged_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damaged-images/842cdf641eb30d9c9cbe15bc23e02256e5a5dfd4-WaterDiscolouration.png",
+    "mask_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damage-masks/842cdf641eb30d9c9cbe15bc23e02256e5a5dfd4-WaterDiscolouration-mask.png"
+  },
+  {
+    "image_identifier": "8900bfd10cd9ffd66a411ddfdbbcc54cfaf144ce",
+    "original_image_filename": "8900bfd10cd9ffd66a411ddfdbbcc54cfaf144ce.jpg",
+    "damage_type": "WaterDiscolouration",
+    "original_image_path": "../data/img/full/8900bfd10cd9ffd66a411ddfdbbcc54cfaf144ce.jpg",
+    "damaged_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damaged-images/8900bfd10cd9ffd66a411ddfdbbcc54cfaf144ce-WaterDiscolouration.png",
+    "mask_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damage-masks/8900bfd10cd9ffd66a411ddfdbbcc54cfaf144ce-WaterDiscolouration-mask.png"
+  },
+  {
+    "image_identifier": "313c63ce11cf12d914d7aab9369a02e7c192ee3d",
+    "original_image_filename": "313c63ce11cf12d914d7aab9369a02e7c192ee3d.jpg",
+    "damage_type": "WaterDiscolouration",
+    "original_image_path": "../data/img/full/313c63ce11cf12d914d7aab9369a02e7c192ee3d.jpg",
+    "damaged_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damaged-images/313c63ce11cf12d914d7aab9369a02e7c192ee3d-WaterDiscolouration.png",
+    "mask_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damage-masks/313c63ce11cf12d914d7aab9369a02e7c192ee3d-WaterDiscolouration-mask.png"
+  },
+  {
+    "image_identifier": "3a1289b085dec6284130d60600f7297651d2a0a3",
+    "original_image_filename": "3a1289b085dec6284130d60600f7297651d2a0a3.jpg",
+    "damage_type": "ScratchDamage",
+    "original_image_path": "../data/img/full/3a1289b085dec6284130d60600f7297651d2a0a3.jpg",
+    "damaged_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damaged-images/3a1289b085dec6284130d60600f7297651d2a0a3-ScratchDamage.png",
+    "mask_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damage-masks/3a1289b085dec6284130d60600f7297651d2a0a3-ScratchDamage-mask.png"
+  },
+  {
+    "image_identifier": "abaf531b97cc838612dc34fba642eadf9f02aa2e",
+    "original_image_filename": "abaf531b97cc838612dc34fba642eadf9f02aa2e.jpg",
+    "damage_type": "CraquelureDamage",
+    "original_image_path": "../data/img/full/abaf531b97cc838612dc34fba642eadf9f02aa2e.jpg",
+    "damaged_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damaged-images/abaf531b97cc838612dc34fba642eadf9f02aa2e-CraquelureDamage.png",
+    "mask_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damage-masks/abaf531b97cc838612dc34fba642eadf9f02aa2e-CraquelureDamage-mask.png"
+  },
+  {
+    "image_identifier": "1924247d4a67a171f5af2628ecb8d17e5283cc19",
+    "original_image_filename": "1924247d4a67a171f5af2628ecb8d17e5283cc19.jpg",
+    "damage_type": "CraquelureDamage",
+    "original_image_path": "../data/img/full/1924247d4a67a171f5af2628ecb8d17e5283cc19.jpg",
+    "damaged_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damaged-images/1924247d4a67a171f5af2628ecb8d17e5283cc19-CraquelureDamage.png",
+    "mask_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damage-masks/1924247d4a67a171f5af2628ecb8d17e5283cc19-CraquelureDamage-mask.png"
+  },
+  {
+    "image_identifier": "053a715f906ffcc223c132821f75bbedb9c07bab",
+    "original_image_filename": "053a715f906ffcc223c132821f75bbedb9c07bab.jpg",
+    "damage_type": "WaterDiscolouration",
+    "original_image_path": "../data/img/full/053a715f906ffcc223c132821f75bbedb9c07bab.jpg",
+    "damaged_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damaged-images/053a715f906ffcc223c132821f75bbedb9c07bab-WaterDiscolouration.png",
+    "mask_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damage-masks/053a715f906ffcc223c132821f75bbedb9c07bab-WaterDiscolouration-mask.png"
+  },
+  {
+    "image_identifier": "ebc13b9f6546c36360532fddc575254631ed6fae",
+    "original_image_filename": "ebc13b9f6546c36360532fddc575254631ed6fae.jpg",
+    "damage_type": "CraquelureDamage",
+    "original_image_path": "../data/img/full/ebc13b9f6546c36360532fddc575254631ed6fae.jpg",
+    "damaged_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damaged-images/ebc13b9f6546c36360532fddc575254631ed6fae-CraquelureDamage.png",
+    "mask_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damage-masks/ebc13b9f6546c36360532fddc575254631ed6fae-CraquelureDamage-mask.png"
+  },
+  {
+    "image_identifier": "1565d1d9c0b193b1f1c1e01b9d6b9e06c794eecf",
+    "original_image_filename": "1565d1d9c0b193b1f1c1e01b9d6b9e06c794eecf.jpg",
+    "damage_type": "ScratchDamage",
+    "original_image_path": "../data/img/full/1565d1d9c0b193b1f1c1e01b9d6b9e06c794eecf.jpg",
+    "damaged_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damaged-images/1565d1d9c0b193b1f1c1e01b9d6b9e06c794eecf-ScratchDamage.png",
+    "mask_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damage-masks/1565d1d9c0b193b1f1c1e01b9d6b9e06c794eecf-ScratchDamage-mask.png"
+  },
+  {
+    "image_identifier": "023015a20f618b5848e0491e44fc7257213c53a2",
+    "original_image_filename": "023015a20f618b5848e0491e44fc7257213c53a2.jpg",
+    "damage_type": "CraquelureDamage",
+    "original_image_path": "../data/img/full/023015a20f618b5848e0491e44fc7257213c53a2.jpg",
+    "damaged_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damaged-images/023015a20f618b5848e0491e44fc7257213c53a2-CraquelureDamage.png",
+    "mask_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damage-masks/023015a20f618b5848e0491e44fc7257213c53a2-CraquelureDamage-mask.png"
+  },
+  {
+    "image_identifier": "622b861b7d78e67ccdf1c23529c749a1d45910c3",
+    "original_image_filename": "622b861b7d78e67ccdf1c23529c749a1d45910c3.jpg",
+    "damage_type": "CraquelureDamage",
+    "original_image_path": "../data/img/full/622b861b7d78e67ccdf1c23529c749a1d45910c3.jpg",
+    "damaged_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damaged-images/622b861b7d78e67ccdf1c23529c749a1d45910c3-CraquelureDamage.png",
+    "mask_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damage-masks/622b861b7d78e67ccdf1c23529c749a1d45910c3-CraquelureDamage-mask.png"
+  },
+  {
+    "image_identifier": "fd3277732691ffadac1ebeaaf9502e7b4f3a9a93",
+    "original_image_filename": "fd3277732691ffadac1ebeaaf9502e7b4f3a9a93.jpg",
+    "damage_type": "CraquelureDamage",
+    "original_image_path": "../data/img/full/fd3277732691ffadac1ebeaaf9502e7b4f3a9a93.jpg",
+    "damaged_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damaged-images/fd3277732691ffadac1ebeaaf9502e7b4f3a9a93-CraquelureDamage.png",
+    "mask_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damage-masks/fd3277732691ffadac1ebeaaf9502e7b4f3a9a93-CraquelureDamage-mask.png"
+  },
+  {
+    "image_identifier": "7c10761b7605c05f6bf1873fa4557257ff9d8e7a",
+    "original_image_filename": "7c10761b7605c05f6bf1873fa4557257ff9d8e7a.jpg",
+    "damage_type": "WaterDiscolouration",
+    "original_image_path": "../data/img/full/7c10761b7605c05f6bf1873fa4557257ff9d8e7a.jpg",
+    "damaged_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damaged-images/7c10761b7605c05f6bf1873fa4557257ff9d8e7a-WaterDiscolouration.png",
+    "mask_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damage-masks/7c10761b7605c05f6bf1873fa4557257ff9d8e7a-WaterDiscolouration-mask.png"
+  },
+  {
+    "image_identifier": "0db670f5eedb58ac9814bdb6e30a6601b7031190",
+    "original_image_filename": "0db670f5eedb58ac9814bdb6e30a6601b7031190.jpg",
+    "damage_type": "CraquelureDamage",
+    "original_image_path": "../data/img/full/0db670f5eedb58ac9814bdb6e30a6601b7031190.jpg",
+    "damaged_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damaged-images/0db670f5eedb58ac9814bdb6e30a6601b7031190-CraquelureDamage.png",
+    "mask_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damage-masks/0db670f5eedb58ac9814bdb6e30a6601b7031190-CraquelureDamage-mask.png"
+  },
+  {
+    "image_identifier": "20e7fdf01fea273eccb63492e29fd78228eda6fa",
+    "original_image_filename": "20e7fdf01fea273eccb63492e29fd78228eda6fa.jpg",
+    "damage_type": "CraquelureDamage",
+    "original_image_path": "../data/img/full/20e7fdf01fea273eccb63492e29fd78228eda6fa.jpg",
+    "damaged_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damaged-images/20e7fdf01fea273eccb63492e29fd78228eda6fa-CraquelureDamage.png",
+    "mask_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damage-masks/20e7fdf01fea273eccb63492e29fd78228eda6fa-CraquelureDamage-mask.png"
+  },
+  {
+    "image_identifier": "6885961b8df4f387599167a002efb6ce0b096851",
+    "original_image_filename": "6885961b8df4f387599167a002efb6ce0b096851.jpg",
+    "damage_type": "CraquelureDamage",
+    "original_image_path": "../data/img/full/6885961b8df4f387599167a002efb6ce0b096851.jpg",
+    "damaged_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damaged-images/6885961b8df4f387599167a002efb6ce0b096851-CraquelureDamage.png",
+    "mask_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damage-masks/6885961b8df4f387599167a002efb6ce0b096851-CraquelureDamage-mask.png"
+  },
+  {
+    "image_identifier": "ca7b1c5efc57c3c978be8365c54ab4e54b8e4723",
+    "original_image_filename": "ca7b1c5efc57c3c978be8365c54ab4e54b8e4723.jpg",
+    "damage_type": "CraquelureDamage",
+    "original_image_path": "../data/img/full/ca7b1c5efc57c3c978be8365c54ab4e54b8e4723.jpg",
+    "damaged_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damaged-images/ca7b1c5efc57c3c978be8365c54ab4e54b8e4723-CraquelureDamage.png",
+    "mask_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damage-masks/ca7b1c5efc57c3c978be8365c54ab4e54b8e4723-CraquelureDamage-mask.png"
+  },
+  {
+    "image_identifier": "33827a5de1ee02f4b79ab4d0b3620fcfc57583cf",
+    "original_image_filename": "33827a5de1ee02f4b79ab4d0b3620fcfc57583cf.jpg",
+    "damage_type": "CraquelureDamage",
+    "original_image_path": "../data/img/full/33827a5de1ee02f4b79ab4d0b3620fcfc57583cf.jpg",
+    "damaged_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damaged-images/33827a5de1ee02f4b79ab4d0b3620fcfc57583cf-CraquelureDamage.png",
+    "mask_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damage-masks/33827a5de1ee02f4b79ab4d0b3620fcfc57583cf-CraquelureDamage-mask.png"
+  },
+  {
+    "image_identifier": "9c20dbdf950a7bf55a8460c92e95ef6a65d1eabe",
+    "original_image_filename": "9c20dbdf950a7bf55a8460c92e95ef6a65d1eabe.jpg",
+    "damage_type": "ScratchDamage",
+    "original_image_path": "../data/img/full/9c20dbdf950a7bf55a8460c92e95ef6a65d1eabe.jpg",
+    "damaged_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damaged-images/9c20dbdf950a7bf55a8460c92e95ef6a65d1eabe-ScratchDamage.png",
+    "mask_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damage-masks/9c20dbdf950a7bf55a8460c92e95ef6a65d1eabe-ScratchDamage-mask.png"
+  },
+  {
+    "image_identifier": "86ddadfb55b433bb67633f964369a39fbe10d804",
+    "original_image_filename": "86ddadfb55b433bb67633f964369a39fbe10d804.jpg",
+    "damage_type": "CraquelureDamage",
+    "original_image_path": "../data/img/full/86ddadfb55b433bb67633f964369a39fbe10d804.jpg",
+    "damaged_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damaged-images/86ddadfb55b433bb67633f964369a39fbe10d804-CraquelureDamage.png",
+    "mask_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damage-masks/86ddadfb55b433bb67633f964369a39fbe10d804-CraquelureDamage-mask.png"
+  },
+  {
+    "image_identifier": "41e0599217f886290ba06d2331926f2ed1bb1abf",
+    "original_image_filename": "41e0599217f886290ba06d2331926f2ed1bb1abf.jpg",
+    "damage_type": "CraquelureDamage",
+    "original_image_path": "../data/img/full/41e0599217f886290ba06d2331926f2ed1bb1abf.jpg",
+    "damaged_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damaged-images/41e0599217f886290ba06d2331926f2ed1bb1abf-CraquelureDamage.png",
+    "mask_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damage-masks/41e0599217f886290ba06d2331926f2ed1bb1abf-CraquelureDamage-mask.png"
+  },
+  {
+    "image_identifier": "acac083d1f200a421a45c32727b187f9ede85601",
+    "original_image_filename": "acac083d1f200a421a45c32727b187f9ede85601.jpg",
+    "damage_type": "CraquelureDamage",
+    "original_image_path": "../data/img/full/acac083d1f200a421a45c32727b187f9ede85601.jpg",
+    "damaged_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damaged-images/acac083d1f200a421a45c32727b187f9ede85601-CraquelureDamage.png",
+    "mask_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damage-masks/acac083d1f200a421a45c32727b187f9ede85601-CraquelureDamage-mask.png"
+  },
+  {
+    "image_identifier": "5485e24a7d6f44167729bea9b30bc32ab5453980",
+    "original_image_filename": "5485e24a7d6f44167729bea9b30bc32ab5453980.jpg",
+    "damage_type": "CraquelureDamage",
+    "original_image_path": "../data/img/full/5485e24a7d6f44167729bea9b30bc32ab5453980.jpg",
+    "damaged_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damaged-images/5485e24a7d6f44167729bea9b30bc32ab5453980-CraquelureDamage.png",
+    "mask_image_path": "../data/multiprocessing-sample-damaged-and-mask/generated-damage-masks/5485e24a7d6f44167729bea9b30bc32ab5453980-CraquelureDamage-mask.png"
   }
 ]

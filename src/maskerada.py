@@ -163,43 +163,56 @@ class CraquelureDamage:
             [0.28, 0.27, 0.2],
             [0.35, 0.3, 0.25]
         ]
-
+    
         self.crack_mask_paths = [
             os.path.join(self.crack_mask_dir, fname)
             for fname in os.listdir(self.crack_mask_dir)
+            if fname.lower().endswith(('.png', '.jpg', '.jpeg'))
         ]
-
-    def apply(self, image_pil):
-        crack_path = random.choice(self.crack_mask_paths)
-        crack_mask = Image.open(crack_path).convert("L").resize(image_pil.size)
-
-        img_np = np.array(image_pil).astype(np.float32) / 255.0
-        mask_np = np.array(crack_mask).astype(np.uint8)
-
-        mask_aug = A.Compose([
+    
+        self.mask_aug = A.Compose([
             A.HorizontalFlip(p=0.5),
             A.VerticalFlip(p=0.5)
         ])
-        augmented = mask_aug(image=mask_np)
+
+    def apply(self, image_pil):
+        # Select and load a random crack mask
+        crack_path = random.choice(self.crack_mask_paths)
+        crack_mask = Image.open(crack_path).convert("L").resize(image_pil.size)
+    
+        # Convert image and mask to NumPy arrays
+        img_np = np.array(image_pil).astype(np.float32) / 255.0
+        mask_np = np.array(crack_mask).astype(np.uint8)
+    
+        # Apply Albumentations augmentations (random flips)
+        augmented = self.mask_aug(image=mask_np)
         aug_mask = augmented["image"]
-
+    
+        # Binarize the augmented mask
         _, binary_aug_mask = cv2.threshold(
-            aug_mask, 127, 255, cv2.THRESH_BINARY)
-
+            aug_mask, 127, 255, cv2.THRESH_BINARY
+        )
+    
+        # Prepare 3-channel binary mask for blending
         aug_mask_3c = np.stack([binary_aug_mask / 255] * 3, axis=-1)
-
+    
+        # Choose a random earthy tint and alpha
         base_tint = np.array(random.choice(self.color_options))
         dark_crack = np.ones_like(img_np) * base_tint
         alpha = random.uniform(*self.alpha_range)
-
+    
+        # Blend the crack effect into the image
         craquelured_np = (
             img_np * (1 - alpha * aug_mask_3c) +
             dark_crack * (alpha * aug_mask_3c)
         )
+    
+        # Convert blended image and mask back to PIL
         result = Image.fromarray((craquelured_np * 255).astype(np.uint8))
         mask_pil = Image.fromarray(binary_aug_mask)
-
+    
+        # Ensure mask is in RGBA (for saving consistency)
         if mask_pil.mode != 'RGBA':
             mask_pil = mask_pil.convert('RGBA')
-            
+    
         return result, mask_pil
