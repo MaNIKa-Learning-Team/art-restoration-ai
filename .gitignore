@@ -175,3 +175,5 @@ cython_debug/
 
 # Ignore directory containing image data
 data/img/**
+data/damaged-and-mask-dataset/
+data/multiprocessing-sample-damaged-and-mask/
