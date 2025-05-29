@@ -6,7 +6,7 @@ dependencies:
   - _libgcc_mutex=0.1=main
   - _openmp_mutex=5.1=1_gnu
   - albucore=0.0.24=pyhd8ed1ab_0
-  - albumentations=2.0.7=pyhd8ed1ab_0
+  - albumentations=2.0.8=pyhd8ed1ab_0
   - alsa-lib=1.2.14=hb9d3cd8_0
   - annotated-types=0.7.0=pyhd8ed1ab_1
   - anyio=4.7.0=py310h06a4308_0
@@ -76,6 +76,7 @@ dependencies:
   - jasper=4.2.5=h1920b20_0
   - jedi=0.19.2=py310h06a4308_0
   - jinja2=3.1.6=py310h06a4308_0
+  - joblib=1.5.1=pyhd8ed1ab_0
   - json5=0.9.25=py310h06a4308_0
   - jsonschema=4.23.0=py310h06a4308_0
   - jsonschema-specifications=2023.7.1=py310h06a4308_0
@@ -267,6 +268,7 @@ dependencies:
   - rfc3339-validator=0.1.4=py310h06a4308_0
   - rfc3986-validator=0.1.1=py310h06a4308_0
   - rpds-py=0.22.3=py310h4aa5aa6_0
+  - scikit-learn=1.6.1=py310h27f47ee_0
   - scipy=1.15.2=py310h1d65ade_0
   - sdl2=2.32.54=h3f2d84a_0
   - sdl3=3.2.14=he3e324a_0
@@ -286,6 +288,7 @@ dependencies:
   - svt-av1=3.0.2=h5888daf_0
   - tbb=2022.1.0=h4ce085d_0
   - terminado=0.17.1=py310h06a4308_0
+  - threadpoolctl=3.6.0=pyhecae5ae_0
   - tinycss2=1.4.0=py310h06a4308_0
   - tk=8.6.13=noxft_h4845f30_101
   - tomli=2.0.1=py310h06a4308_0
