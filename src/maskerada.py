@@ -216,3 +216,25 @@ class CraquelureDamage:
             mask_pil = mask_pil.convert('RGBA')
     
         return result, mask_pil
+
+class NoDamage:
+    """
+    Outputs reference for what an undamaged painting appears.
+    Returns original image and blank mask.
+    """
+
+    def __init__(self):
+        pass
+
+    def apply(self, image_pil):
+        if image_pil.mode != 'RGBA':
+            image_pil = image_pil.convert('RGBA')
+
+        width, height = image_pil.size
+        mask_pil = Image.new('L', (width, height), 0)
+
+        # Optional: ensure RGBA mask like other classes
+        if mask_pil.mode != 'RGBA':
+            mask_pil = mask_pil.convert('RGBA')
+
+        return image_pil, mask_pil
