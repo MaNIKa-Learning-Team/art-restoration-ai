@@ -87,12 +87,23 @@ class ScratchDamage:
         return result, mask_pil
 
 
-class WaterDiscolouration:
-    """
-    Simulates water stain effects by overlaying irregular semi-transparent
-    brownish blobs on the image. Blur is applied for realism.
-    """
 
+def random_blob(cx, cy, avg_radius, irregularity=0.4, spikiness=0.3, num_vertices=15):
+    irregularity = np.clip(irregularity, 0, 1) * 2 * np.pi / num_vertices
+    spikiness = np.clip(spikiness, 0, 1) * avg_radius
+    angle_steps = np.random.normal(2 * np.pi / num_vertices, irregularity, num_vertices)
+    angles = np.cumsum(angle_steps)
+    angles %= 2 * np.pi
+
+    points = []
+    for angle in angles:
+        radius = np.clip(np.random.normal(avg_radius, spikiness), 0, 2 * avg_radius)
+        x = cx + radius * np.cos(angle)
+        y = cy + radius * np.sin(angle)
+        points.append((x, y))
+    return points
+
+class WaterDiscolouration:
     def __init__(
         self,
         num_stains_range=(1, 5),
@@ -106,13 +117,11 @@ class WaterDiscolouration:
         self.color_tint = color_tint
 
     def apply(self, image_pil):
-        # Transparent overlay for stains
-        overlay = Image.new('RGBA', image_pil.size, (0, 0, 0, 0))
-        draw = ImageDraw.Draw(overlay)
-
         width, height = image_pil.size
         num_stains = random.randint(*self.num_stains_range)
 
+        # Final composite overlay
+        composite_overlay = Image.new('RGBA', (width, height), (0, 0, 0, 0))
         mask_pil = Image.new('L', (width, height), 0)
         draw_mask = ImageDraw.Draw(mask_pil)
 
@@ -121,25 +130,31 @@ class WaterDiscolouration:
             rh = random.uniform(*self.stain_size_factor_range) * height / 2
             cx = random.randint(0, width)
             cy = random.randint(0, height)
-            bbox = [cx - rw, cy - rh, cx + rw, cy + rh]
 
             alpha = random.randint(*self.alpha_range)
             stain_color = (*self.color_tint, alpha)
+            blob = random_blob(cx, cy, avg_radius=max(rw, rh))
 
-            draw.ellipse(bbox, fill=stain_color)
-            draw_mask.ellipse(bbox, fill=255)
+            # Temporary overlay for this stain
+            stain_layer = Image.new('RGBA', (width, height), (0, 0, 0, 0))
+            draw_stain = ImageDraw.Draw(stain_layer)
+            draw_stain.polygon(blob, fill=stain_color)
 
-        overlay = overlay.filter(ImageFilter.GaussianBlur(
-            radius=random.uniform(5, 15)))
+            # Blur this specific stain
+            blur_radius = random.uniform(5, 15)
+            stain_layer = stain_layer.filter(ImageFilter.GaussianBlur(radius=blur_radius))
+
+            # Composite this stain into the full overlay
+            composite_overlay = Image.alpha_composite(composite_overlay, stain_layer)
+
+            # Update the mask with the same polygon
+            draw_mask.polygon(blob, fill=255)
 
         if image_pil.mode != 'RGBA':
             image_pil = image_pil.convert('RGBA')
 
-        result = Image.alpha_composite(image_pil, overlay).convert('RGB')
-        if mask_pil.mode != 'RGBA':
-            mask_pil = mask_pil.convert('RGBA')
-            
-        return result, mask_pil
+        result = Image.alpha_composite(image_pil, composite_overlay).convert('RGB')
+        return result, mask_pil.convert('L')
 
 
 class CraquelureDamage:
