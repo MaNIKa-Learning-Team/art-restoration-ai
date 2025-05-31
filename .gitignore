@@ -177,3 +177,5 @@ cython_debug/
 data/img/**
 data/damaged-and-mask-dataset/
 data/multiprocessing-sample-damaged-and-mask/
+data/preprocessed-npz/
+
