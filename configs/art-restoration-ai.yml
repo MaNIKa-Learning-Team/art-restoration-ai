@@ -1,4 +1,4 @@
-name: art-restoration-ai
+name: art-restoration-ai-default
 channels:
   - defaults
   - conda-forge
@@ -344,4 +344,4 @@ dependencies:
   - zstd=1.5.7=hb8e6e7a_2
   - pip:
       - python-dotenv==1.1.0
-prefix: /home/msds2025/cjasmin/.conda/envs/art-restoration-ai
+prefix: ~/.conda/envs/art-restoration-ai
