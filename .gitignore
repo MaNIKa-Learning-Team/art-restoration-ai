@@ -178,4 +178,6 @@ data/img/**
 data/damaged-and-mask-dataset/
 data/multiprocessing-sample-damaged-and-mask/
 data/preprocessed-npz/
+data/v4-damaged-and-mask-dataset/
+data/v4-preprocessed-npz/
 
