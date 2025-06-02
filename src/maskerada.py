@@ -1,5 +1,6 @@
 import os
 import random
+from pathlib import Path
 
 import cv2
 import numpy as np
@@ -87,7 +88,6 @@ class ScratchDamage:
         return result, mask_pil
 
 
-
 def random_blob(cx, cy, avg_radius, irregularity=0.4, spikiness=0.3, num_vertices=15):
     irregularity = np.clip(irregularity, 0, 1) * 2 * np.pi / num_vertices
     spikiness = np.clip(spikiness, 0, 1) * avg_radius
@@ -102,6 +102,7 @@ def random_blob(cx, cy, avg_radius, irregularity=0.4, spikiness=0.3, num_vertice
         y = cy + radius * np.sin(angle)
         points.append((x, y))
     return points
+
 
 class WaterDiscolouration:
     def __init__(
@@ -165,7 +166,7 @@ class CraquelureDamage:
 
     def __init__(
         self,
-        crack_mask_dir="../data/crack-masks",
+        crack_mask_dir=str(Path("../../data/crack-masks").resolve()),
         alpha_range=(0.5, 0.9),
         color_options=None
     ):
@@ -231,6 +232,7 @@ class CraquelureDamage:
             mask_pil = mask_pil.convert('RGBA')
     
         return result, mask_pil
+
 
 class NoDamage:
     """
