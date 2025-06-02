@@ -183,3 +183,12 @@ data/v4-preprocessed-npz/
 data/v5-damaged-and-mask-dataset/
 data/v5-preprocessed-npz/
 data/v5-split-dataset/
+data/inpainting-dataset/
+data/v6-damaged-and-mask-dataset/
+data/v6-preprocessed-npz/
+data/v6-split-dataset/
+models/v5-best-f1.h5
+models/v5-best-precision.h5
+models/v5-best-recall.h5
+models/v5-best-val_iou.h5
+models/v5-best-val_loss.h5
