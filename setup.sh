@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Configuration
-ENV_NAMES=("art-restoration-ai" "sm-legacy")
-DISPLAY_NAMES=("art-restoration-ai" "sm-legacy")
-YML_FILES=("configs/art-restoration-ai.yml" "configs/sm-legacy.yml")
+ENV_NAMES=("art-restoration-ai-default" "sm-legacy")
+DISPLAY_NAMES=("art-restoration-ai-default" "sm-legacy")
+YML_FILES=("configs/art-restoration-ai-default.yml" "configs/sm-legacy.yml")
 
 # Loop over environments
 for i in "${!ENV_NAMES[@]}"; do
