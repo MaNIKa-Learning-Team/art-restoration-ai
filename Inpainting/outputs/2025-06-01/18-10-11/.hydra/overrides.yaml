@@ -1,4 +1,0 @@
-- model.path=lama/pretrained/big-lama
-- indir=input/images
-- indir_mask=input/masks
-- outdir=output

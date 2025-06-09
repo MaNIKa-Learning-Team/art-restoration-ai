@@ -30,3 +30,6 @@ Then you can import:
 ```
 from damage_effects import TearDamage
 ```
+
+
+NOTE: Add note about checking the directories in the final notebooks before running them.

@@ -1,0 +1,20 @@
+name: lama-conda
+channels:
+  - defaults
+  - conda-forge
+  - pytorch
+dependencies:
+  - python=3.8
+  - numpy=1.23.5
+  - scikit-image=0.17.2
+  - tqdm
+  - pyyaml
+  - easydict
+  - opencv
+  - pip
+  - pytorch=1.13.1
+  - torchvision=0.14.1
+  - cudatoolkit=11.6  # or 11.8 depending on your GPU/driver
+  - pip:
+      - albumentations==0.5.2
+      - hydra-core==1.1.1

@@ -1,4 +1,0 @@
-Phase 1: Scraping, EDA (3 notebooks)
-Phase 2: Dataset Generation, Separating into Folders, Conversion
-Phase 3: Damage Detection Training
-Phase 4: In-painting
