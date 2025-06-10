@@ -1,4 +1,4 @@
-# art-restoration-ai
+# The Art of Restoration: An AI Pipeline for Assisting in Painting Restoration
 AI model that visually restores deteriorated paintings to guide and support art conservators during treatment.
 
 ## Setup
