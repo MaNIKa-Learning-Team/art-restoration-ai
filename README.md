@@ -37,6 +37,11 @@ The proposed pipeline consists of two main components:
 
 Data collection, synthetic damage generation, model design, and evaluation methodology are detailed in the following sections. 
 
+## Experimental Setup
+To train the damage detection models (e.g., U-Net), we used a cloud-based environment equipped with Intel Xeon Silver 4110 and E5-2620 v4 CPUs, each with 32 logical processors, and an NVIDIA GeForce GTX 1080 Ti GPU with 11 GB VRAM running CUDA 12.6. For the inpainting models (DeepFillv2), training and inference were performed locally on a machine with an AMD Ryzen 7 7840HS processor and dual GPUs: an NVIDIA GeForce RTX 4060 Laptop GPU with 8 GB dedicated memory and an integrated AMD Radeon 780M. The RTX 4060 consistently ran at full utilization during inpainting, highlighting the method’s computational demands.
+
+For inference using the LaMa inpainting model, we utilized a system powered by an Intel Xeon Silver 4208 CPU with 32 logical processors and an NVIDIA GeForce RTX 2080 Ti GPU. The GPU provided 11 GB of VRAM and was operated under CUDA 12.6. This setup allowed for efficient batch processing of high-resolution images, enabling faster generation of restored outputs during the evaluation phase.
+
 ## Methodology
 ### Dataset Description
 The study requires high-quality digital images of paintings to serve as the foundation for model training and evaluation. These images were sourced through web scraping from WikiArt, a large online visual art encyclopedia. To automate this process, the study employed the publicly available scrapWikiArt GitHub notebooks. 
@@ -160,6 +165,8 @@ Ultimately, the goal of this work is not to automate the art restoration process
 
 ## References
 
+<div style="border: 2px solid #ccc; padding: 10px; border-radius: 5px;">
+<div>
 # Setup Guide
 ## Install the environment
 From the project root, run:
