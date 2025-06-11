@@ -44,6 +44,18 @@ For inference using the LaMa inpainting model, we utilized a system powered by a
 
 ## Methodology
 ### Dataset Description
+Scrape WikiArt 
+notebooks/final-notebooks/data-collection-webscraping.ipynb 
+
+Clean metadata and images collected 
+notebooks/final-notebooks/eda-3-reconcile-metadata-and-images.ipynb 
+
+EDA on image files 
+notebooks/final-notebooks/1-eda-1-images.ipynb 
+
+EDA on metadata files 
+notebooks/final-notebooks/1-eda-2-metadata.ipynb 
+
 The study requires high-quality digital images of paintings to serve as the foundation for model training and evaluation. These images were sourced through web scraping from WikiArt, a large online visual art encyclopedia. To automate this process, the study employed the publicly available scrapWikiArt GitHub notebooks. 
 
 Since the project focuses on surface damage restoration, the dataset was restricted to canvas-based paintings, where such types of deterioration (scratches, craquelure, water damage) are most relevant. After filtering, the final dataset consists of 34,658 paintings spanning 116 different artistic styles — with the largest representation coming from Impressionism, Realism, and Romanticism. 
@@ -54,6 +66,12 @@ Since the project focuses on surface damage restoration, the dataset was restric
 </p>
 
 ### Data Preprocessing
+Module for damage creation 
+art-restoration-ai/src/maskerada.py 
+
+Generate dataset of synthetically damaged paintings 
+art-restoration-ai/notebooks/damage-simulation/damage-data-generator.ipynb
+
 One of the core challenges in building an AI pipeline for art restoration is the lack of suitable training data. High-quality images of damaged artworks are rare, and paired examples of the same painting in both damaged and undamaged forms are even more scarce. To address this gap, the team developed a synthetic data generation pipeline that emulates common types of visual damage on clean artworks—specifically craquelure, water stains, and scratches—allowing supervised training of detection and inpainting models.
 
 ![Sample craquelure simulation](./images/craquelure-sample.png)
@@ -68,6 +86,15 @@ The clean images used for this purpose were sourced from WikiArt, covering a wid
 The system output binary image-mask pairs, where each mask identified the location of the applied damage. This setup enabled training of pixel-wise damage detection models such as U-Net. Although some types of degradation—particularly scratches—were more difficult to model convincingly, the synthetic damage library played a critical role in making model training possible. It provided a scalable and controllable way to simulate degradation, forming the foundation for the later stages of the restoration pipeline.
 
 ### Damage Detection
+Train-validation-test split implementation 
+art-restoration-ai/notebooks/final-notebooks/2-image-to-np-arrays.ipynb 
+
+U-Net training of damage detection with heavy augmentation 
+art-restoration-ai/notebooks/final-notebooks/3-damage-detection-heavy-augmentation-model-training.ipynb 
+
+U-Net training of damage detection with light augmentation 
+art-restoration-ai/notebooks/final-notebooks/3-damage-detection-light-augmentation-model-training.ipynb 
+
 To detect regions of visual degradation within paintings, the team employed a convolutional neural network based on the U-Net architecture. U-Net is widely used in image segmentation tasks, particularly when precise pixel-level classification is required. This made it well-suited for the problem of identifying damaged regions in artworks, such as cracks, stains, or scratches.
 
 The architecture of U-Net consists of an encoder-decoder structure. The encoder progressively reduces the spatial resolution of the image to capture high-level contextual features, while the decoder restores the resolution, allowing the model to produce a segmentation map that aligns with the original image dimensions. Crucially, U-Net incorporates skip connections between corresponding layers in the encoder and decoder. These connections allow fine-grained spatial features—such as the outlines of cracks or subtle watermarks—to propagate directly to the reconstruction layers, improving localization accuracy without sacrificing global context.
@@ -77,8 +104,8 @@ The U-Net implementation used in this project was constructed with a ResNet-34 b
 ### Virtual Inpainting
 For the virtual inpainting component of the pipeline, the study explored three approaches, each representing a different level of algorithmic complexity and computational requirements:
 - OpenCV Inpainting: This classical computer vision method fills in damaged regions by propagating information from surrounding pixels. It is fast and simple to implement, but is best suited for repairing small, localized defects where nearby texture can be effectively extended. In this study, OpenCV’s Telea algorithm was used.
-- LaMa (Large Mask Inpainting): LaMa is a deep learning-based inpainting model designed to handle large and complex missing regions. It combines convolutional layers with Fast Fourier Convolution (FFC) blocks, allowing the model to capture both local and global image context. In this study, a pretrained LaMa model was used to provide an out-of-the-box performance benchmark.
-- DeepFill v2: DeepFill v2 is a Generative Adversarial Network (GAN)-based model specifically designed for image inpainting. It consists of two main components: a Generator, which synthesizes plausible content for the missing regions, and a Discriminator, which evaluates the realism of the generated output. The two components are trained adversarially — the Generator progressively improves its outputs to fool the Discriminator, resulting in increasingly refined and realistic inpainted images. In this project, DeepFill v2 was trained on the project’s dataset under limited compute constraints.
+- LaMa (Large Mask Inpainting): LaMa is a deep learning-based inpainting model designed to handle large and complex missing regions. It combines convolutional layers with Fast Fourier Convolution (FFC) blocks, allowing the model to capture both local and global image context. In this study, a pretrained LaMa model was used to provide an out-of-the-box performance benchmark (advimman, 2021).
+- DeepFill v2: DeepFill v2 is a Generative Adversarial Network (GAN)-based model specifically designed for image inpainting. It consists of two main components: a Generator, which synthesizes plausible content for the missing regions, and a Discriminator, which evaluates the realism of the generated output. The two components are trained adversarially — the Generator progressively improves its outputs to fool the Discriminator, resulting in increasingly refined and realistic inpainted images (nipponjo, 2020). In this project, DeepFill v2 was trained on the project’s dataset under limited compute constraints.
 
 ## Results
 ### Damage Detection
@@ -108,6 +135,21 @@ To assess the practical viability of the damage detection model, it was also app
 </p>
 
 ### Virtual Inpainting
+Train-Validation-Test dataset split for inpainting model training 
+art-restoration-ai/notebooks/final-notebooks/4-a-inpainting-model-dataset-split.ipynb 
+
+DeepFillkv2 training 
+art-restoration-ai/notebooks/final-notebooks/4-deepfillkv2-model-training.ipynb 
+
+Deepfillkv2 evaluation 
+notebooks/final-notebooks/4-inpainting-model-test-and-metrics.ipynb 
+
+LaMa implementation and evaluation 
+art-restoration-ai/notebooks/final-notebooks/4-lama-model-training.ipynb 
+
+OpenCV implementation and evaluation
+art-restoration-ai/notebooks/final-notebooks/4-opencv-inpainting.ipynb 
+
 The three inpainting methods were evaluated using two standard image quality metrics:
 - Structural Similarity Index Measure (SSIM) — assesses perceptual similarity between the inpainted image and the original, considering structure, luminance, and contrast. This is particularly important for preserving the visual integrity of artistic details.
 - Peak Signal-to-Noise Ratio (PSNR) — measures the fidelity of the inpainted image at the pixel level by comparing it to the original. Higher PSNR indicates greater similarity.
@@ -140,7 +182,7 @@ When applied to images with larger damaged regions (e.g. extensive water damage)
 
 These qualitative observations reinforce the trade-offs between model simplicity, training effort, and restoration quality across different damage types and sizes.
 
-![Virtual inpainting models applied to damage](./images/virtual-inpainting-sample-test-set.png
+![Virtual inpainting models applied to damage](./images/virtual-inpainting-sample-test-set.png)
 <p style="font-family: Georgia, serif; font-size: 8px; font-style: italic; margin-top: 4px;">
 <b>Figure 7.</b> Virtual inpainting methods applied to the test dataset paintings.
 </p>
@@ -165,9 +207,15 @@ Ultimately, the goal of this work is not to automate the art restoration process
 
 ## References
 
+advimman. (2021). lama [Source code]. GitHub. https://github.com/advimman/lama 
+Britannica. (n.d.). Art conservation and restoration. Encyclopaedia Britannica. https://www.britannica.com/art/art-conservation-and-restoration 
+michaelvin1322. (2022). scrapWikiArt [Source code]. GitHub. https://github.com/michaelvin1322/scrapWikiArt 
+nipponjo. (2020). deepfillv2-pytorch [Source code]. GitHub. https://github.com/nipponjo/deepfillv2-pytorch 
+
 <div style="border: 2px solid #ccc; padding: 10px; border-radius: 5px;">
-<div>
 # Setup Guide
+<div>
+  
 ## Install the environment
 From the project root, run:
 `bash setup.sh`
