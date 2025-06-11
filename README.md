@@ -44,16 +44,16 @@ For inference using the LaMa inpainting model, we utilized a system powered by a
 
 ## Methodology
 ### Dataset Description
-Scrape WikiArt 
+**Scrape WikiArt**
 notebooks/final-notebooks/data-collection-webscraping.ipynb 
 
-Clean metadata and images collected 
+**Clean metadata and images collected**
 notebooks/final-notebooks/eda-3-reconcile-metadata-and-images.ipynb 
 
-EDA on image files 
+**EDA on image files**
 notebooks/final-notebooks/1-eda-1-images.ipynb 
 
-EDA on metadata files 
+**EDA on metadata files** 
 notebooks/final-notebooks/1-eda-2-metadata.ipynb 
 
 The study requires high-quality digital images of paintings to serve as the foundation for model training and evaluation. These images were sourced through web scraping from WikiArt, a large online visual art encyclopedia. To automate this process, the study employed the publicly available scrapWikiArt GitHub notebooks. 
@@ -208,8 +208,11 @@ Ultimately, the goal of this work is not to automate the art restoration process
 ## References
 
 advimman. (2021). lama [Source code]. GitHub. https://github.com/advimman/lama 
+
 Britannica. (n.d.). Art conservation and restoration. Encyclopaedia Britannica. https://www.britannica.com/art/art-conservation-and-restoration 
+
 michaelvin1322. (2022). scrapWikiArt [Source code]. GitHub. https://github.com/michaelvin1322/scrapWikiArt 
+
 nipponjo. (2020). deepfillv2-pytorch [Source code]. GitHub. https://github.com/nipponjo/deepfillv2-pytorch 
 
 <div style="border: 2px solid #ccc; padding: 10px; border-radius: 5px;">
