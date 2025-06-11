@@ -44,7 +44,7 @@ The study requires high-quality digital images of paintings to serve as the foun
 Since the project focuses on surface damage restoration, the dataset was restricted to canvas-based paintings, where such types of deterioration (scratches, craquelure, water damage) are most relevant. After filtering, the final dataset consists of 34,658 paintings spanning 116 different artistic styles — with the largest representation coming from Impressionism, Realism, and Romanticism. 
 
 ![Bar graph for count of styles](./images/count-of-styles.png)
-<p style="font-family: Georgia, serif; font-size: 15px; font-style: italic; margin-top: 4px;">
+<p style="font-family: Georgia, serif; font-size: 8px; font-style: italic; margin-top: 4px;">
 <b>Figure 1.</b> Number of painting styles in the dataset
 </p>
 
@@ -54,7 +54,7 @@ One of the core challenges in building an AI pipeline for art restoration is the
 ![Sample craquelure simulation](./images/craquelure-sample.png)
 ![Sample water discoloration simulation](./images/water-damage-sample.png)
 ![Sample scratches simulation](./images/scratches-sample.png)
-<p style="font-family: Georgia, serif; font-size: 15px; font-style: italic; margin-top: 4px;">
+<p style="font-family: Georgia, serif; font-size: 8px; font-style: italic; margin-top: 4px;">
 <b>Figure 2.</b> Examples of synthetic damage types applied to clean artworks. Each row shows an original image (left), the damage mask (center), and the augmented result (right). From top to bottom: craquelure, water discoloration, and scratches.
 </p>
 
@@ -90,7 +90,7 @@ On the held-out test set, the model trained with minimal augmentation outperform
 These results suggest that while heavier augmentation can improve generalization in many computer vision tasks, it may also introduce excessive noise or unrealistic distortions when applied to synthetic damage detection. Given that the damage masks were already artificially generated, additional augmentation may have compounded the visual divergence from real-world artifacts. As a result, the model benefited more from subtle perturbations than from aggressive transformations. This finding underscores the importance of tuning augmentation pipelines carefully, especially in contexts where the synthetic nature of the data introduces its own distributional shift.
 
 ![Damage detection models performance](./images/damage-detection-performance.png)
-<p style="font-family: Georgia, serif; font-size: 15px; font-style: italic; margin-top: 4px;">
+<p style="font-family: Georgia, serif; font-size: 8px; font-style: italic; margin-top: 4px;">
 <b>Figure 3.</b> Test set performance of U-Net under minimal and heavy augmentation strategies, evaluated by IoU and F1-score.
 </p>
 
@@ -98,7 +98,7 @@ To assess the practical viability of the damage detection model, it was also app
 
 ![Sample damage detection on real world painting](./images/sample-damage-detection-1.png)
 ![Sample damage detection on real world painting 2](./images/sample-damage-detection-2.png)
-<p style="font-family: Georgia, serif; font-size: 15px; font-style: italic; margin-top: 4px;">
+<p style="font-family: Georgia, serif; font-size: 8px; font-style: italic; margin-top: 4px;">
 <b>Figure 4.</b> Damage detection model applied to real-world paintings. Predicted damage masks align with visible degradation such as cracks and stains, despite the model being trained only on synthetically damaged data.
 </p>
 
@@ -108,7 +108,7 @@ The three inpainting methods were evaluated using two standard image quality met
 - Peak Signal-to-Noise Ratio (PSNR) — measures the fidelity of the inpainted image at the pixel level by comparing it to the original. Higher PSNR indicates greater similarity.
 
 ![Performance of virtual inpainting models](./images/results-virtual-inpainting.png)
-<p style="font-family: Georgia, serif; font-size: 15px; font-style: italic; margin-top: 4px;">
+<p style="font-family: Georgia, serif; font-size: 8px; font-style: italic; margin-top: 4px;">
 <b>Figure 5.</b> Test set performance of different virtual inpainting methods and models, evaluated by SSIM and PSNR.
 </p>
 
@@ -117,7 +117,7 @@ Among the evaluated methods, OpenCV inpainting produced the highest SSIM and PSN
 In contrast, LaMa was evaluated in its pretrained form (trained on generic images), and DeepFill v2 was trained for only 5 epochs on the project dataset. The limited training of DeepFill reflects the study’s computational constraints. Despite this, the evaluation provided valuable insights into the potential performance of more advanced deep learning models under realistic project limitations.
 
 ![Virtual inpainting models applied to damage](./images/results-virtual-inpainting.png)
-<p style="font-family: Georgia, serif; font-size: 15px; font-style: italic; margin-top: 4px;">
+<p style="font-family: Georgia, serif; font-size: 8px; font-style: italic; margin-top: 4px;">
 <b>Figure 6.</b> Virtual inpainting methods applied to real-world paintings.
 </p>
 
@@ -136,7 +136,7 @@ When applied to images with larger damaged regions (e.g. extensive water damage)
 These qualitative observations reinforce the trade-offs between model simplicity, training effort, and restoration quality across different damage types and sizes.
 
 ![Virtual inpainting models applied to damage](./images/virtual-inpainting-sample-test-set.png
-<p style="font-family: Georgia, serif; font-size: 15px; font-style: italic; margin-top: 4px;">
+<p style="font-family: Georgia, serif; font-size: 8px; font-style: italic; margin-top: 4px;">
 <b>Figure 7.</b> Virtual inpainting methods applied to the test dataset paintings.
 </p>
 
