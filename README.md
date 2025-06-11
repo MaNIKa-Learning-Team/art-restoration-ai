@@ -215,9 +215,7 @@ michaelvin1322. (2022). scrapWikiArt [Source code]. GitHub. https://github.com/m
 
 nipponjo. (2020). deepfillv2-pytorch [Source code]. GitHub. https://github.com/nipponjo/deepfillv2-pytorch 
 
-<div style="border: 2px solid #ccc; padding: 10px; border-radius: 5px;">
 # Setup Guide
-<div>
   
 ## Install the environment
 From the project root, run:
