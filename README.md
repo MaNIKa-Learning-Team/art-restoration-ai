@@ -17,7 +17,7 @@ Benchmarked OpenCV, LaMa, and DeepFill v2 across damage types, highlighting stre
 
 ## Introduction
 
-Artistic expression is a fundamental facet of human culture — a dialogue that transcends generations. Through brushstrokes and vibrant pigments, artists document the human experience, offering valuable insights into history and society. Each work of art serves as a cultural artifact; preserving it safeguards the heritage it embodies. This underscores the importance of art conservation and restoration. Conservation aims to prolong an artwork’s lifespan by mitigating factors that cause deterioration, while restoration — a branch of conservation — involves interventions to return an artwork closer to its original or intended state. Although these practices date back centuries, they have evolved substantially, particularly with the integration of new technologies (Encyclopaedia Britannica, n.d.) [1]. 
+Artistic expression is a fundamental facet of human culture — a dialogue that transcends generations. Through brushstrokes and vibrant pigments, artists document the human experience, offering valuable insights into history and society. Each work of art serves as a cultural artifact; preserving it safeguards the heritage it embodies. This underscores the importance of art conservation and restoration. Conservation aims to prolong an artwork’s lifespan by mitigating factors that cause deterioration, while restoration — a branch of conservation — involves interventions to return an artwork closer to its original or intended state. Although these practices date back centuries, they have evolved substantially, particularly with the integration of new technologies (Encyclopaedia Britannica, n.d.). 
 
 ### Motivation
 
