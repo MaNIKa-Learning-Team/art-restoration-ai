@@ -19,15 +19,15 @@ Benchmarked OpenCV, LaMa, and DeepFill v2 across damage types, highlighting stre
 
 Artistic expression is a fundamental facet of human culture — a dialogue that transcends generations. Through brushstrokes and vibrant pigments, artists document the human experience, offering valuable insights into history and society. Each work of art serves as a cultural artifact; preserving it safeguards the heritage it embodies. This underscores the importance of art conservation and restoration. Conservation aims to prolong an artwork’s lifespan by mitigating factors that cause deterioration, while restoration — a branch of conservation — involves interventions to return an artwork closer to its original or intended state. Although these practices date back centuries, they have evolved substantially, particularly with the integration of new technologies (Encyclopaedia Britannica, n.d.) [1]. 
 
-## Motivation
+### Motivation
 
 Modern art restoration is a complex, highly manual process that requires significant expertise and judgment. Before intervention, restorers must carefully analyze a painting’s condition, identify damaged areas, and plan appropriate treatments. While digital tools exist for documentation and visualization, AI-based support remains underexplored in this domain. Machine learning models capable of automatically detecting surface damage and proposing plausible virtual restorations could provide valuable assistance to conservators — helping them visualize treatment outcomes, explore alternatives, and prioritize efforts. Such tools can enhance, not replace, expert judgment in the restoration process. 
 
-## Problem Statement
+### Problem Statement
 
 How can a combined AI pipeline generate visually plausible restorations of paintings with water damage, scratches, or craquelure to support art conservators during restoration planning and treatment? 
 
-## Study Overview
+### Study Overview
 
 This study investigates the use of machine learning to assist art restorers through an AI-based pipeline that mirrors key stages in the restoration workflow: identifying damaged regions and generating virtual inpainting suggestions. The project focuses on three common types of surface damage: scratches, craquelure (cracks), and water damage. 
 
@@ -37,7 +37,7 @@ The proposed pipeline consists of two main components:
 
 Data collection, synthetic damage generation, model design, and evaluation methodology are detailed in the following sections. 
 
-## Experimental Setup
+### Experimental Setup
 To train the damage detection models (e.g., U-Net), we used a cloud-based environment equipped with Intel Xeon Silver 4110 and E5-2620 v4 CPUs, each with 32 logical processors, and an NVIDIA GeForce GTX 1080 Ti GPU with 11 GB VRAM running CUDA 12.6. For the inpainting models (DeepFillv2), training and inference were performed locally on a machine with an AMD Ryzen 7 7840HS processor and dual GPUs: an NVIDIA GeForce RTX 4060 Laptop GPU with 8 GB dedicated memory and an integrated AMD Radeon 780M. The RTX 4060 consistently ran at full utilization during inpainting, highlighting the method’s computational demands.
 
 For inference using the LaMa inpainting model, we utilized a system powered by an Intel Xeon Silver 4208 CPU with 32 logical processors and an NVIDIA GeForce RTX 2080 Ti GPU. The GPU provided 11 GB of VRAM and was operated under CUDA 12.6. This setup allowed for efficient batch processing of high-resolution images, enabling faster generation of restored outputs during the evaluation phase.
@@ -45,16 +45,16 @@ For inference using the LaMa inpainting model, we utilized a system powered by a
 ## Methodology
 ### Dataset Description
 **Scrape WikiArt**
-notebooks/final-notebooks/data-collection-webscraping.ipynb 
+- art-restoration-ai/notebooks/final-notebooks/data-collection-webscraping.ipynb 
 
 **Clean metadata and images collected**
-notebooks/final-notebooks/eda-3-reconcile-metadata-and-images.ipynb 
+- art-restoration-ai/notebooks/final-notebooks/eda-3-reconcile-metadata-and-images.ipynb 
 
 **EDA on image files**
-notebooks/final-notebooks/1-eda-1-images.ipynb 
+- art-restoration-ai/notebooks/final-notebooks/1-eda-1-images.ipynb 
 
 **EDA on metadata files** 
-notebooks/final-notebooks/1-eda-2-metadata.ipynb 
+- art-restoration-ai/notebooks/final-notebooks/1-eda-2-metadata.ipynb 
 
 The study requires high-quality digital images of paintings to serve as the foundation for model training and evaluation. These images were sourced through web scraping from WikiArt, a large online visual art encyclopedia. To automate this process, the study employed the publicly available scrapWikiArt GitHub notebooks. 
 
@@ -66,11 +66,11 @@ Since the project focuses on surface damage restoration, the dataset was restric
 </p>
 
 ### Data Preprocessing
-Module for damage creation 
-art-restoration-ai/src/maskerada.py 
+**Module for damage creation** 
+- art-restoration-ai/src/maskerada.py 
 
-Generate dataset of synthetically damaged paintings 
-art-restoration-ai/notebooks/damage-simulation/damage-data-generator.ipynb
+**Generate dataset of synthetically damaged paintings** 
+- art-restoration-ai/notebooks/damage-simulation/damage-data-generator.ipynb
 
 One of the core challenges in building an AI pipeline for art restoration is the lack of suitable training data. High-quality images of damaged artworks are rare, and paired examples of the same painting in both damaged and undamaged forms are even more scarce. To address this gap, the team developed a synthetic data generation pipeline that emulates common types of visual damage on clean artworks—specifically craquelure, water stains, and scratches—allowing supervised training of detection and inpainting models.
 
@@ -86,14 +86,14 @@ The clean images used for this purpose were sourced from WikiArt, covering a wid
 The system output binary image-mask pairs, where each mask identified the location of the applied damage. This setup enabled training of pixel-wise damage detection models such as U-Net. Although some types of degradation—particularly scratches—were more difficult to model convincingly, the synthetic damage library played a critical role in making model training possible. It provided a scalable and controllable way to simulate degradation, forming the foundation for the later stages of the restoration pipeline.
 
 ### Damage Detection
-Train-validation-test split implementation 
-art-restoration-ai/notebooks/final-notebooks/2-image-to-np-arrays.ipynb 
+**Train-validation-test split implementation**
+- art-restoration-ai/notebooks/final-notebooks/2-image-to-np-arrays.ipynb 
 
-U-Net training of damage detection with heavy augmentation 
-art-restoration-ai/notebooks/final-notebooks/3-damage-detection-heavy-augmentation-model-training.ipynb 
+**U-Net training of damage detection with heavy augmentation** 
+- art-restoration-ai/notebooks/final-notebooks/3-damage-detection-heavy-augmentation-model-training.ipynb 
 
-U-Net training of damage detection with light augmentation 
-art-restoration-ai/notebooks/final-notebooks/3-damage-detection-light-augmentation-model-training.ipynb 
+**U-Net training of damage detection with light augmentation** 
+- art-restoration-ai/notebooks/final-notebooks/3-damage-detection-light-augmentation-model-training.ipynb 
 
 To detect regions of visual degradation within paintings, the team employed a convolutional neural network based on the U-Net architecture. U-Net is widely used in image segmentation tasks, particularly when precise pixel-level classification is required. This made it well-suited for the problem of identifying damaged regions in artworks, such as cracks, stains, or scratches.
 
@@ -135,20 +135,20 @@ To assess the practical viability of the damage detection model, it was also app
 </p>
 
 ### Virtual Inpainting
-Train-Validation-Test dataset split for inpainting model training 
-art-restoration-ai/notebooks/final-notebooks/4-a-inpainting-model-dataset-split.ipynb 
+**Train-Validation-Test dataset split for inpainting model training** 
+- art-restoration-ai/notebooks/final-notebooks/4-a-inpainting-model-dataset-split.ipynb 
 
-DeepFillkv2 training 
-art-restoration-ai/notebooks/final-notebooks/4-deepfillkv2-model-training.ipynb 
+**DeepFillkv2 training** 
+- art-restoration-ai/notebooks/final-notebooks/4-deepfillkv2-model-training.ipynb 
 
-Deepfillkv2 evaluation 
-notebooks/final-notebooks/4-inpainting-model-test-and-metrics.ipynb 
+**Deepfillkv2 evaluation** 
+- notebooks/final-notebooks/4-inpainting-model-test-and-metrics.ipynb 
 
-LaMa implementation and evaluation 
-art-restoration-ai/notebooks/final-notebooks/4-lama-model-training.ipynb 
+**LaMa implementation and evaluation** 
+- art-restoration-ai/notebooks/final-notebooks/4-lama-model-training.ipynb 
 
-OpenCV implementation and evaluation
-art-restoration-ai/notebooks/final-notebooks/4-opencv-inpainting.ipynb 
+**OpenCV implementation and evaluation**
+- art-restoration-ai/notebooks/final-notebooks/4-opencv-inpainting.ipynb 
 
 The three inpainting methods were evaluated using two standard image quality metrics:
 - Structural Similarity Index Measure (SSIM) — assesses perceptual similarity between the inpainted image and the original, considering structure, luminance, and contrast. This is particularly important for preserving the visual integrity of artistic details.
